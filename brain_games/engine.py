@@ -15,9 +15,9 @@ def play():
             print('Correct!')
             game_rounds -= 1
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{is_even(number)}'.")
+            print(f"'{answer}' is wrong answer ;(. \
+                    Correct answer was '{is_even(number)}'.")
             print(f'Let\'s try again, {name}!')
             break
     if not game_rounds:
         print(f'Congratulations, {name}!')
-
