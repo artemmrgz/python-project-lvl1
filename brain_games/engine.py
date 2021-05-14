@@ -1,22 +1,25 @@
-from brain_games.welcome import welcome_user
-from brain_games.functions import is_even
-import random
+import prompt
 
 
-def play():
-    name = welcome_user()
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def welcome_user():
+    print('Welcome to the Brain games!')
+    name = prompt.string('May I have your name? ')
+    print(f'Hello, {name}!')
+    return name
+
+
+def play(name, generate_question, calculate):
     game_rounds = 3
     while game_rounds:
-        number = random.randint(0, 100)
-        print(f'Question: {number}')
-        answer = input('Your answer: ')
-        if is_even(number) == answer:
+        question = generate_question()
+        user_answer = prompt.string('Your answer: ')
+        correct_answer = calculate(question)
+        if correct_answer == user_answer:
             print('Correct!')
             game_rounds -= 1
         else:
-            print(f"'{answer}' is wrong answer ;(. \
-                    Correct answer was '{is_even(number)}'.")
+            print(f"'{user_answer}' is wrong answer ;(. \
+Correct answer was '{correct_answer}'.")
             print(f'Let\'s try again, {name}!')
             break
     if not game_rounds:
