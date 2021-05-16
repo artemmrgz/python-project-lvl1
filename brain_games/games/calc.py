@@ -1,17 +1,22 @@
 import random
 
 OPERATION = ['+', '-', '*']
+TASK = 'What is the result of the expression?'
 
 
 def generate_question():
     number1 = random.randint(0, 100)
     number2 = random.randint(0, 100)
     operation = random.choice(OPERATION)
-    print(f'Question: {number1} {operation} {number2}')
     return number1, operation, number2
 
 
-def calculate(expression):
+def ask_question(expression):
+    number1, operation, number2 = expression
+    print(f'Question: {number1} {operation} {number2}')
+
+
+def solve(expression):
     number1, operation, number2 = expression
     if operation == '+':
         return str(number1 + number2)
