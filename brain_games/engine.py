@@ -10,7 +10,9 @@ def welcome_user():
     return name
 
 
-def play(name, game):
+def play(game):
+    name = welcome_user()
+    print(game.TASK)
     game_rounds = DEFAULT_ROUNDS
     while game_rounds:
         question = game.generate_question()
