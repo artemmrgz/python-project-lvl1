@@ -13,7 +13,11 @@ def ask_question(number):
     print(f'Question: {number}')
 
 
+def is_even(number):
+    return number % 2 == 0
+
+
 def solve(number):
-    if number % 2 == 0:
+    if is_even(number):
         return 'yes'
     return 'no'
