@@ -5,6 +5,6 @@
 
 ![Python CI](https://github.com/artemmrgz/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
-https://asciinema.org/a/kEs0GgFiUgQqzvrAC8k9tIcD9
+[![asciicast](https://asciinema.org/a/kEs0GgFiUgQqzvrAC8k9tIcD9.png)](https://asciinema.org/a/kEs0GgFiUgQqzvrAC8k9tIcD9)
 
-https://asciinema.org/a/rtQEPXedOqvtNsOzKSMxs4ocG
+[![asciicast](https://asciinema.org/a/rtQEPXedOqvtNsOzKSMxs4ocG.png)](https://asciinema.org/a/rtQEPXedOqvtNsOzKSMxs4ocG)
