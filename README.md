@@ -5,6 +5,10 @@
 
 ![Python CI](https://github.com/artemmrgz/python-project-lvl1/actions/workflows/pyci.yml/badge.svg)
 
+### Description:
+Set of five mini-games lauched from the console.
+
+### Examples:
 brain-even
 [![asciicast](https://asciinema.org/a/kEs0GgFiUgQqzvrAC8k9tIcD9.png)](https://asciinema.org/a/kEs0GgFiUgQqzvrAC8k9tIcD9)
 
